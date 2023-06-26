@@ -4,6 +4,7 @@ interface Props {
     age:number;
     isMarried:Boolean;
     friends:string[];
+    country:string;
 }
 
 
@@ -17,6 +18,8 @@ export const Person = (props : Props) => {
             {props.friends.map((friend : string) =>(
                  <h1>{friend}</h1> 
             ))}
+
+            <h1>Country: {props.country}</h1>
         </div>
     );
 }
