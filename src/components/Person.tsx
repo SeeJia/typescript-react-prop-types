@@ -4,11 +4,13 @@ interface Props {
     age:number;
     isMarried:Boolean;
     friends:string[];
-    country:string;
+    country:Country;
 }
 
-enum Country {
-    
+export enum Country {
+    Brazil = "Brazil",
+    Canada = "Canada",
+    Malaysia = "Malaysia"
 }
 
 

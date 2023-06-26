@@ -1,6 +1,6 @@
 import React from "react";
 import './App.css';
-import { Person } from "./components/Person";
+import { Person, Country } from "./components/Person";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       age={21}
       isMarried={true}
       friends = {["james","marry"]}
-      country="Malaysia"
+      country={Country.Malaysia}
 
       />
       
