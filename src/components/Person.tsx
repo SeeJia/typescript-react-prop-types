@@ -7,6 +7,10 @@ interface Props {
     country:string;
 }
 
+enum Country {
+    
+}
+
 
 export const Person = (props : Props) => {
     return(
