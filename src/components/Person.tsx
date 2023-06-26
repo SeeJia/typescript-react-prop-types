@@ -4,7 +4,7 @@ interface Props {
     age:number;
     isMarried:Boolean;
     friends:string[];
-    country?:string;
+    country:string;
 }
 
 

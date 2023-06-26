@@ -13,6 +13,7 @@ function App() {
       age={21}
       isMarried={true}
       friends = {["james","marry"]}
+      country="Malaysia"
 
       />
       
