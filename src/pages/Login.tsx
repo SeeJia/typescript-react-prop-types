@@ -1,8 +1,11 @@
+import {useState} from "react";
+
 export const Login = () =>{
+    const [newUsername, setNewUsername] = useState("");
     return(
     <h1>This is the login page.
 
-    <input />
+    <input onChange={(e) =>{setNewUsername(e.target.value)}} />
 
     <button>Submit Login</button>
     <button>Logout</button>
