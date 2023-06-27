@@ -1,21 +1,20 @@
-import React from "react";
 import './App.css';
-import { Person, Country } from "./components/Person";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { Home } from './pages/Home';
+import { Contact } from './pages/Contact';
+import { Login } from './pages/login';
 
 function App() {
   return (
     <div className="App">
-
-      <Person 
-      
-      name="Pedro"
-      email="Pedro@gmail.com"
-      age={21}
-      isMarried={true}
-      friends = {["james","marry"]}
-      country={Country.Malaysia}
-
-      />
+    
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
+    </Router>
       
     </div>
   );
