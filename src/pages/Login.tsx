@@ -1,6 +1,6 @@
 import {useState} from "react";
 import { login, logout} from "../store";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 export const Login = () =>{
     const [newUsername, setNewUsername] = useState("");
