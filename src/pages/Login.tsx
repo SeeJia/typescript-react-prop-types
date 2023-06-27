@@ -6,9 +6,11 @@ export const Login = () =>{
     const [newUsername, setNewUsername] = useState("");
     
     const dispatch = useDispatch();
+
+    const username = useSelector((state: any) => state.user.value.username);
     
     return(
-    <h1>This is the login page.
+    <h1>{username}
 
     <input onChange={(e) =>{setNewUsername(e.target.value)}} />
 
